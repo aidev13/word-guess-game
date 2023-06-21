@@ -7,18 +7,12 @@
   var winsElement = document.querySelector(".win") 
   var lossElement = document.querySelector(".lose")
 
-  console.log(startButton, resetButton,timerElement,winsElement,lossElement)
-  // reset button
-  // count down timer
-  // word-blanks
-  // wins
-  // losses
-
-  // list of words
-  // userGuesses = [] list of letters guessed by user
-  // answer = "function"
+  var words = ["bacon", "dogs", "people", "hello world", "javascript"]
+  var userGuesses = []
+  var answer
 
   function startRound() {
+    console.log("start round")
     // start timer
     // pick a random word
     // set word-blanks to have _'s
@@ -46,6 +40,6 @@
   }
 
   // Event Listeners
-    // start - startRound()
+    startButton.addEventListener("click", startRound)
     // reset
     // keydown - onKeydown
